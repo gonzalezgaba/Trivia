@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="http://icons.veryicon.com/16/Movie%20%26%20TV/Simpsons%20Vol.%2001/Public%20Figures%20Mayor%20Diamond%20Joe%20Quimby.png"/>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Trivia Los Simpsons</title>
+  </head>
+  <body onload="trivia()">
+    <h1 id="categoryTittle">Completa la frase</h1>
+    <div id="question1">
+      <h4>1.- Sin televisión y sin cerveza, Homero pierde...</h4>
+      <form>
+        <input type="radio" name="answer" value="1" id="answerA1" class="correct"> la cabeza.<br>
+        <input type="radio" name="answer" value="0" id="answerA2"> la cordura.<br>
+        <input type="radio" name="answer" value="0" id="answerA3"> las piernas.<br>
+      </form>
+    </div>
+    <div id="question2">
+      <h4>2.- ¡Cállense ya, maldita sea! ¡Dejen dormir... </h4>
+      <form>
+        <input type="radio" name="answer" value="0" id="answerA4"> a Marge!<br>
+        <input type="radio" class="correct" name="answer" value="1" id="answerA5"> al prójimo!<br>
+        <input type="radio" name="answer" value="0" id="answerA6"> al gato!<br>
+      </form>
+    </div>
+    <div id="question3">
+      <h4>3.- Siempre estuve orgulloso de que no fueras...</h4>
+      <form>
+        <input type="radio" class="correct" name="answer" value="1" id="answerA7"> un enano.<br>
+        <input type="radio" name="answer" value="0" id="answerA8"> un vagabundo.<br>
+        <input type="radio" name="answer" value="0" id="answerA9"> un actor porno.<br>
+      </form>
+    </div>
+    <button type="button" id="nextQuestion">Siguiente</button>
+    <div id="score">
+      <h1>Tu puntuación final es:</h1>
+      <h2 id="finalScore"></h2>
+      <p>¿Quieres volver a jugar?</p>
+      <div>
+        <form action="welcome.html">
+          <button type="submit" class="finalBtns" name="button">Sí</button>
+        </form>
+        <form action="thanks.html">
+          <button type="submit" class="finalBtns" name="button">No</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

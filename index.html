@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="http://icons.veryicon.com/16/Movie%20%26%20TV/Simpsons%20Vol.%2001/Public%20Figures%20Mayor%20Diamond%20Joe%20Quimby.png"/>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Trivia Los Simpsons</title>
+  </head>
+  <body>
+    <h1>Trivia Los Simpsons</h1>
+    <img src="https://i.pinimg.com/originals/54/67/54/5467549d4d0c67f326e792d5803bcc16.png" alt="Imagen homero" height="300">
+    <p>¡Ingresa tu nombre para comenzar a jugar!</p>
+    <form id="userForm" action="welcome.html">
+      <!--El action del formulario es a la página que se va a enviar cuando se haga submit-->
+      <input type="text" id="user" placeholder="Tu nombre aquí">
+      <button type="button" id="playBtn" onclick="saveUser()">Jugar</button>
+    <!-- valor de type es button para que funcione el onclick y no cambie de página-->
+    </form>
+  </body>
+</html>

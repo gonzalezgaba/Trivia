@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="http://icons.veryicon.com/16/Movie%20%26%20TV/Simpsons%20Vol.%2001/Public%20Figures%20Mayor%20Diamond%20Joe%20Quimby.png"/>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Trivia Los Simpsons</title>
+  </head>
+  <body onload="trivia()">
+    <h1 id="categoryTittle">Adivina el personaje</h1>
+    <div id="question1">
+      <h4>Adivina el personaje 1</h4>
+      <img src="https://vignette.wikia.nocookie.net/lossimpson/images/b/bd/Eleanor_Abernathy.png/revision/latest/scale-to-width-down/200?cb=20110619013023&path-prefix=es" width="200" height="200">
+      <form>
+        <input type="radio" name="answer" value="0" id="answerA1"> Mamá de Flanders.<br>
+        <input type="radio" name="answer" value="0" id="answerA2"> Abuela de Milhouse.<br>
+        <input type="radio" name="answer" class="correct" value="1" id="answerA3"> Loca de los gatos.<br>
+      </form>
+    </div>
+    <div id="question2">
+      <h4>Adivina el personaje 2</h4>
+      <img src="https://img.sharetv.com/shows/characters/thumbnails/the_simpsons.sherri.jpg" height="200" width="200">
+      <form>
+        <input type="radio" name="answer" class="correct" value="1" id="answerA4"> Sherri.<br>
+        <input type="radio" name="answer" value="0" id="answerA5"> Terri.<br>
+        <input type="radio" name="answer" value="0" id="answerA6"> Lisa.<br>
+      </form>
+    </div>
+    <div id="question3">
+      <h4>Adivina el personaje 3</h4>
+      <img src="https://vignette.wikia.nocookie.net/lossimpson/images/1/10/Milhouse%28Shelbyville%29.png/revision/latest?cb=20110224014537&path-prefix=es" width="200" height="200">
+      <form>
+        <input type="radio" name="answer" value="0" id="answerA7"> Milhouse de Ciudad Capital.<br>
+        <input type="radio" name="answer" value="0" id="answerA8"> Milhouse de Springfield.<br>
+        <input type="radio" name="answer" class="correct" value="1" id="answerA9"> Milhouse de Shelbyville.<br>
+      </form>
+    </div>
+    <button type="button" id="nextQuestion">Siguiente</button>
+    <div id="score">
+      <h1>Tu puntuación final es:</h1>
+      <h2 id="finalScore"></h2>
+      <p>¿Quieres volver a jugar?</p>
+      <form action="welcome.html">
+        <button type="submit" class="finalBtns" name="button">Sí</button>
+      </form>
+      <form action="thanks.html">
+        <button type="submit" class="finalBtns" name="button">No</button>
+      </form>
+    </div>
+  </body>
+</html>
